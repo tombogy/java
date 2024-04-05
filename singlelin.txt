@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Shape{
+void display(){
+System.out.println(" area of reactangle :");
+}
+}
+class Rect extends Shape {
+void area (int l, int b){
+int a=l*b;
+System.out.println(a);
+
+}
+}
+class Volume extends Rect{
+void vol(int h,int l, int b){
+System.out.println(" volume of the reactangle :");
+int v= h*l*b;
+System.out.println(v);
+
+}
+}
+class Main {
+public static void main (String args[]){
+Scanner input= new Scanner(System.in);
+System.out.println(" enter the lenght L :");
+int l =input.nextInt();
+System.out.println(" enter the breadth  b :");
+
+int b =input.nextInt();
+System.out.println(" enter the height h :");
+int h =input.nextInt();
+
+Volume obj =new Volume();
+obj.display ();
+obj.area (l,b);
+obj.vol(l,b,h);
+}
+}
+

@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Product{
+String x= null;
+String  y= null;
+int z =0;
+void pro()
+{
+Scanner input=new Scanner(System.in);
+System.out.println(" enter the product_code :");
+x = input.nextLine();
+
+System.out.println(" enter the product_name :");
+y = input.nextLine();
+
+System.out.println(" enter the product_price  :");
+z = input.nextInt();
+
+}
+}
+class Main{
+
+public static void main (String []args){
+Product obj1=new Product();
+Product obj2=new Product();
+Product obj3=new Product();
+System.out.println(" enter the product_1 details");
+obj1.pro();
+System.out.println(" enter the product_2 details");
+obj2.pro();
+System.out.println(" enter the product_3 details");
+obj3.pro();
+System.out.println(" the  lowest ");
+if (obj1.z < obj2.z && obj1.z < obj3.z)
+{
+ System.out.println(" thw p1 lowest ");
+}
+else if (obj2.z < obj3.z )
+{
+System.out.println(" the p2 lowest ");
+}
+else{
+ System.out.println(" thw p1 lowest ");
+}
+}}

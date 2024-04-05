@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Rect
+{
+void area(int l,int b)
+{
+int c=l*b;
+System.out.println("the area of the rectangle is "+c);
+}
+}
+class Ra{
+public static void main(String args[])
+{
+Scanner input=new Scanner(System.in);
+System.out.println(" enter length :");
+int l=input.nextInt();
+System.out.println(" enter breadth :");
+int b=input.nextInt();
+Rect obj=new Rect();
+obj.area(l,b);
+
+}
+}

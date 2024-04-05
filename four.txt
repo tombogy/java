@@ -1,0 +1,18 @@
+lass Rect
+{
+void area(int l,int b)
+{
+int c=l*b;
+System.out.println(" area of rectangle is :"+c);
+}
+void area(int a,int c, int d){
+int p=2*(a+c+d);
+System.out.println(" perimetre of rectangle is  :"+p);
+}
+}
+class Re{
+public static void main(String args[]){
+Rect obj=new Rect();
+obj.area(10,20);
+obj.area(10,20,30);
+}
